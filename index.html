@@ -1,102 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<title>Nerds</title>
 </head>
 <body>
-	<header>
-	<nav class="nav">
-		<a href=""><img class="logo" src="" alt=""></a>
-		<ul>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
+	<header class="index-header">
+	<nav class="index-header__nav">
+		<a href="" class="index-header__logo-link"><img class="index-header__logo" src="img/nerds-logo.png" alt=""></a>
+		<ul class="index-header__list">
+			<li class="index-header__item"><a href="#">Студия</a></li>
+			<li class="index-header__item"><a href="#">Клиенты</a></li>
+			<li class="index-header__item"><a href="#">Магазин</a></li>
+			<li class="index-header__item"><a href="#">Контакты</a></li>
+			<li class="index-header__item_cart"><a href="#">Корзина</a></li>
 		</ul>
-		<div class="nav__cart"><a href=""> </a></div>
 	</nav>
-	<h2 class="header__tagline"> </h2>
-	<p class="header__text"> </p>
-	<div class="header__read__more__button"> </div>
+	<div class="slider-item slider-first">
+		<h2 class="slider-item__tagline">Долго, дорого, скрупулезно.</h2>
+		<p class="slider-item__text">Математически выверенный дизайн  для вашего сайта или мобильного приложения </p>
+		<a href="#" class="slider-item__more-link">Узнать больше</a>
+		<img src="img/slide1.png" alt="" class="slider-item__img">
+	</div>
+	<div class="slider-item slider-second">
+		<h2 class="slider-item__tagline">Любим математику как никто другой</h2>
+		<p class="slider-item__text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
+		<a href="#" class="slider-item__more-link">Узнать больше</a>
+		<img src="img/slide21.png" alt="" class="slider-item__img">
+	</div>
+	<div class="slider-item slider-third">
+		<h2 class="slider-item__tagline">Только ночь, только хардкор</h2>
+		<p class="slider-item__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается. </p>
+		<a href="#" class="slider-item__more-link">Узнать больше</a>
+		<img src="img/slide3.png" alt="" class="slider-item__img">
+	</div>
 	</header>
-	<section class="slider">
+	<main>
+	<section class="jobs">
 		<ul>
-			<li class="slider__first"><a href="">
-					<img src="" alt="" class="slider__img">
-					<h4 class="slider__heading"></h4>
-					<p class="slider__text"></p>
-					<div class="slider__order__button"></div>
+			<li class="jobs__item jobs-first"><a href="">
+					<img src="img/illustration-1.png" alt="" class="jobs__img">
+					<h2 class="jobs__heading">Веб-сайты</h2>
+					<p class="jobs__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<button class="jobs__button">Заказать</button>
 				</a></li>
-			<li class="slider__second"><a href="">
-					<img src="" alt="" class="slider__img">
-					<h4 class="slider__heading"></h4>
-					<p class="slider__text"></p>
-					<div class="slider__order__button"></div>
+			<li class="jobs__item jobs-second"><a href="">
+					<img src="img/illustration-2.png" alt="" class="jobs__img">
+					<h2 class="jobs__heading">Приложения</h2>
+					<p class="jobs__text">Покорите топ-10 приложений в AppStore и Google Play</p>
+					<button class="jobs__button">Заказать</button>
 				</a></li>
-			<li class="slider__third"><a href="">
-					<img src="" alt="" class="slider__img">
-					<h4 class="slider__heading"></h4>
-					<p class="slider__text"></p>
-					<div class="slider__order__button"></div>
+			<li class="jobs__item jobs-third"><a href="">
+					<img src="img/illustration-3.png" alt="" class="jobs__img">
+					<h2 class="jobs__heading">Презентации</h2>
+					<p class="jobs__text">Вы даже не подозреваете, насколько вы изумительны!</p>
+					<button class="jobs__button">Заказать</button>
 				</a></li>
 		</ul>
 	</section>
 	<section class="main">
-		<div class="main__info"><h2 class="main__info__heading"></h2>
-		<p class="main__info__text"></p>
-		<h6 class="main__info__heading"></h6>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
+		<h1>Дизайн-студия из Краснодара</h1><!-- visability -->
+		<div class="main-info"><strong class="main-info__heading">Мы — маленькая, но гордая дизайн-студия из Краснодара. </strong>
+		<p class="main-info__text"> Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
+		<ul class="main-info__list">Выполняем заказы на разработку: <!--правильно ли оставить название списка здесь, не оборачивая в span? -->
+			<li>Веб-сайтов любой сложности</li>
+			<li>Мобильных приложений для iOS и Android</li>
+			<li>Слайдшоу и видео для корпоративных презентаций</li>
 		</ul>
+		</p>
 		</div>
-		<div class="main__right">
-			<img src="" alt="" class="main__right__logo">
-		<ul class="main__right">
+		<div class="main-right">
+			<img src="img/ners-logo2.png" alt="" class="main-right__logo">
+			<span class="main-right__heading">С 2004 года любим точность во всем:</span>
+		<ul>
 			<li>
-				<h6 class="main_right_numbers"></h6>
-				<p class="main__right__text"></p>
+				<span class="main-right__numbers">146%</span>
+				<span class="main-right__text">Уровень самоотдачи</span>
 			</li>
 			<li>
-				<h6 class="main_right_numbers"></h6>
-				<p class="main__right__text"></p>
+				<span class="main-right__numbers">100%</span>
+				<span class="main-right__text">Соблюдение сроков</span>
 			</li>
 			<li>
-				<h6 class="main_right_numbers"></h6>
-				<p class="main__right__text"></p>
+				<span class="main-right__numbers">50%</span>
+				<span class="main-right__text">Минимальная предоплата</span>
 			</li>
 		</ul>	
 		</div>
 	</section>
 	<section class="partners">
+		<!-- нужен ли заголовок для этого section ??-->
+		<div class="partners-container">
 		<ul>
-			<li><a href=""><img src="" alt=""></a></li>
-			<li><a href=""><img src="" alt=""></a></li>
-			<li><a href=""><img src="" alt=""></a></li>
-			<li><a href=""><img src="" alt=""></a></li>
+			<li><a href=""><img src="img/logo-1.png" alt=""></a></li>
+			<li><a href=""><img src="img/logo-2.png" alt=""></a></li>
+			<li><a href=""><img src="img/logo-3.png" alt=""></a></li>
+			<li><a href=""><img src="img/logo-4.png" alt=""></a></li>
 		</ul>
+		</div>
 	</section>
-	<footer>
-		<img src="" alt="" class="map">
+	</main>
+	<footer class="footer">
+		<img src="img/map.png" alt="" class="map">
 		<div class="feedback">
-			<h4 class="feedback__heading"> </h4>
-			<p class="feedback__text"></p>
-			<div class="feedback__read__more__button"></div>
+			<h2 class="feedback__heading">NЁRDS DESIGN STUDIO</h2>
+			<p class="feedback__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+			<button class="feedback__button">Напишите нам</button>
 		</div>
-		<div class="contacts__container">
+		<div class="contacts-container">
 		<ul class="contacts">
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
-			<li><a href=""></a></li>
+			<li class="contacts__item"><a href=""><img class="imm" src="vk-icon.png" alt=""></a></li>
+			<li class="contacts__item"><a href=""><img src="fb-icon.png" alt=""></a></li>
+			<li class="contacts__item"><a href=""><img src="insta-icon.png" alt=""></a></li>
+			<!-- не уверен что иконки соц сетей будут нормально работать(ну или не знаю как их использовать в данной ситуации)-->
 		</ul>
 		</div>
-		<div class="footer__tagline">
-			<h4></h4>
-			<p></p>
-		</div>
+			<strong>Давайте дружить, это выгодно!</strong>
+			<span>Скидка 10% для друзей из социальных сетей.</span>
 	</footer>
 </body>
 </html>
