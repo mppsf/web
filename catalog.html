@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<title>Каталог</title>
+</head>
+<body>
+	<header class="catalog-header">
+		<a href="" class="logo-link"><img class="logo" src="img/nerds-logo.png" alt="image"></a>
+	<nav class="catalog-header__nav">
+		<ul class="catalog-header__list">
+			<li class="catalog-header__item"><a class="catalog-header__link" href="#">Студия</a></li>
+			<li class="catalog-header__item"><a class="catalog-header__link" href="#">Клиенты</a></li>
+			<li class="catalog-header__item"><a class="catalog-header__link" href="#">Магазин</a></li>
+			<li class="catalog-header__item"><a class="catalog-header__link" href="#">Контакты</a></li>
+			<li class="catalog-header__item_cart"><a class="catalog-header__link" href="#">Корзина</a></li>
+		</ul>
+		<h1 class="index-header__heading">Магазин готовых шаблонов</h1>
+	</nav>
+	</header>
+<main>
+	<form class="filter">
+		<span class="filter__heading">Стоимость</span>
+		<input class="filter__range" type="range">
+		<span class="filter__range-output"> от 
+		<span class="filter__range-output--number"></span> до
+		<span class="filter__range-output--number"></span>
+		</span>
+		<span class="filter__headings">Сетка:</span>
+		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Адаптивная</span>
+		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Фиксированная</span>
+		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Резиновая</span>
+		<span class="filter__heading">Особенности</span>
+		<input type="checkbox"> <span class="filter__option">Слайдер</span>
+		<input type="checkbox"> <span class="filter__option">Блок преимуществ</span>
+		<input type="checkbox"> <span class="filter__option">Новости</span>
+		<input type="checkbox"> <span class="filter__option">Галерея</span>
+		<input type="checkbox"> <span class="filter__option">Корзина</span>
+		<button class="filter__show-button">Показать</button>
+	</form>
+	<form class="sort">
+		<span class="sort__option">по цене</span>
+		<span class="sort__option">По типу</span>
+		<span class="sort__option">По названию</span>
+		<button class="sort__button--up"></button>
+		<button class="sort__button--down"></button>
+	</form>
+	<div class="catalog">
+		<ul>     
+			<li>
+				<div class="catalog-item"><!--нужен ли div вообще, может быть стоит убрать дивы, добавить li класс catalog-item и отталкиваться от них? -->
+					<img src="img/img-sedona.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">Sedona</h3>
+						<p class="item-hover__-text">Информационный сайт для туристов</p>
+						<button class="item-hover__button">9 900 руб.</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="catalog-item">
+					<img src="img/img-pink.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">Pink app</h3>
+						<p class="item-hover__-text">Продуктовый лендинг приложения для iOS и Android</p>
+						<button class="item-hover__button">9 900руб.</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="catalog-item">
+					<img src="img/img-barbershop.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">Barbershop</h3>
+						<p class="item-hover__-text">Сайт салона красоты для мужчин, да</p>
+						<button class="item-hover__button">9 900 руб.</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="catalog-item">
+					<img src="img/img-mishka.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">Mishka</h3>
+						<p class="item-hover__-text">Интернет-магазин вязанных игрушек</p>
+						<button class="item-hover__button">9 900 руб.</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="catalog-item">
+					<img src="img/img-aplus.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">A plus</h3>
+						<p class="item-hover__-text">Лендинг курсов повышения квалификации</p>
+						<button class="item-hover__button">9 900 руб.</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="catalog-item">
+					<img src="img/img-kvast.jpg" alt="">
+					<div class="catalog-item__hover">
+						<h3 class="item-hover__heading">Кваст</h3>
+						<p class="item-hover__-text">Промо-сайт производителя крафтового кваса</p>
+						<button class="item-hover__button">9 900 руб.</button>
+					</div>
+				</div>
+			</li>
+		</ul>
+	<form class="catalog__page-navigation-form">
+		<button class="page-navigation-button">1</button>
+		<button class="page-navigation-button">2</button>
+		<button class="page-navigation-button">3</button>
+		<button class="page-navigation-button">следующая</button>
+	</form>
+	</div>
+</main>
+<footer class="footer">
+		<img src="img/map.png" alt="image" class="map">
+		<div class="feedback">
+			<h2 class="feedback__heading">NЁRDS DESIGN STUDIO</h2>
+			<p class="feedback__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 тел. +7 (812) 275-75-75</p>
+			<button class="feedback__button">Напишите нам</button>
+		</div>
+		<div class="contacts-container">
+		<ul class="contacts">
+			<li class="contacts__item"><a href=""><!-- <img src="img/vk-icon.svg" alt="image"> --></a></li>
+			<li class="contacts__item"><a href=""><!-- <img src="img/fb-icon.svg" alt="image"> --></a></li>
+			<li class="contacts__item"><a href=""><!-- <img src="img/insta-icon.svg" alt="image"> --></a></li> 
+			
+		</ul>
+		</div>
+			<strong>Давайте дружить, это выгодно!
+			<span>Скидка 10% для друзей из социальных сетей.</span></strong>
+	</footer>
+</body>
+</html>
