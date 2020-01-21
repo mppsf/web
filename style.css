@@ -17,6 +17,17 @@ body{
   margin-top: 49px;
   margin-bottom: 0;
 }
+.logo-link{
+  transition: .3s;
+}
+.logo-link:hover{
+  opacity: .8;
+  transition: .3s;
+}
+.logo-link:active{
+  opacity: .3;
+  transition: .3s;
+}
 .index-header__nav{
   margin-top: -35px;
   margin-left: 33%;
@@ -38,6 +49,15 @@ body{
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
+  transition: .3s;
+}
+.index-header__link:hover{
+  color: #fb565a;
+  transition: .3s;
+}
+.index-header__link:active{
+  color: #000;
+  opacity: 0.3;
 }
 .index-header__item_cart{
   margin-left: auto;
@@ -53,7 +73,6 @@ body{
   right: 35px;
   top: 22px;
 }
-
 .slider-container{
   height: 415px;
   width: 100%;
