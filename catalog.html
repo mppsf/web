@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<title>Каталог</title>
@@ -16,47 +17,53 @@
 			<li class="catalog-header__item"><a class="catalog-header__link" href="#">Контакты</a></li>
 			<li class="catalog-header__item_cart"><a class="catalog-header__link" href="#">Корзина</a></li>
 		</ul>
-		<h1 class="index-header__heading">Магазин готовых шаблонов</h1>
 	</nav>
 	</header>
 <main>
+	<h1 class="catalog-heading">Магазин готовых шаблонов</h1>
 	<form class="filter">
+		<fieldset>
 		<span class="filter__heading">Стоимость</span>
 		<input class="filter__range" type="range">
 		<span class="filter__range-output"> от 
 		<span class="filter__range-output--number"></span> до
 		<span class="filter__range-output--number"></span>
 		</span>
-		<span class="filter__headings">Сетка:</span>
-		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Адаптивная</span>
-		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Фиксированная</span>
-		<input class="filter__radio-input" name="grid" type="radio"><span class="filter__option">Резиновая</span>
-		<span class="filter__heading">Особенности</span>
-		<input type="checkbox"> <span class="filter__option">Слайдер</span>
-		<input type="checkbox"> <span class="filter__option">Блок преимуществ</span>
-		<input type="checkbox"> <span class="filter__option">Новости</span>
-		<input type="checkbox"> <span class="filter__option">Галерея</span>
-		<input type="checkbox"> <span class="filter__option">Корзина</span>
-		<button class="filter__show-button">Показать</button>
+		</fieldset>
+		<fieldset>
+		<legend class="filter__headings">Сетка:</legend>
+		<input id="filter-option-adaptive" class="filter__radio-input" name="grid" type="radio"><label class="filter__option" for="filter-option-adaptive">Адаптивная</label>
+		<input id="filter-option-fixed" class="filter__radio-input" name="grid" type="radio"><label class="filter__option" for="filter-option-fixed">Фиксированная</label>
+		<input id="filter-option-rubber" class="filter__radio-input" name="grid" type="radio"><label class="filter__option" for="filter-option-rubber">Резиновая</label>
+		</fieldset>
+		<fieldset>
+		<legend class="filter__heading">Особенности</legend>
+		<input id="filter-option-slider" type="checkbox"> <label for="filter-option-slider" class="filter__option">Слайдер</label>
+		<input id="filter-option-advantages" type="checkbox"> <label for="filter-option-advantages" class="filter__option">Блок преимуществ</label>
+		<input id="filter-option-news" type="checkbox"> <label for="filter-option-news" class="filter__option">Новости</label>
+		<input id="filter-option-gallery" type="checkbox"> <label for="filter-option-gallery" class="filter__option">Галерея</label>
+		<input id="filter-option-cart" type="checkbox"> <label for="filter-option-cart" class="filter__option">Корзина</label>
+		</fieldset>
+		<button type="submit" class="filter__show-button">Показать</button>
 	</form>
 	<form class="sort">
-		<span class="sort__option">по цене</span>
-		<span class="sort__option">По типу</span>
-		<span class="sort__option">По названию</span>
-		<button class="sort__button--up"></button>
-		<button class="sort__button--down"></button>
+		<input type="radio" name="sort-input" id="sort-option-price"> <label for="sort-option-price" class="sort__option">по цене</label>
+		<input type="radio" name="sort-input" id="sort-option-type"> <label for="sort-option-type" class="sort__option">По типу</label>
+		<input type="radio" name="sort-input" id="sort-option-name"> <label for="sort-option-name" class="sort__option">По названию</label>
+		<button type="submit" class="sort__button--up"></button>
+		<button type="submit" class="sort__button--down"></button>
 	</form>
 	<div class="catalog">
 		<ul>     
 			<li>
 				<div class="catalog-item"><!--нужен ли div вообще, может быть стоит убрать дивы, добавить li класс catalog-item и отталкиваться от них? -->
 					<img src="img/img-sedona.jpg" alt="">
+				</div>
 					<div class="catalog-item__hover">
 						<h3 class="item-hover__heading">Sedona</h3>
 						<p class="item-hover__-text">Информационный сайт для туристов</p>
 						<button class="item-hover__button">9 900 руб.</button>
 					</div>
-				</div>
 			</li>
 			<li>
 				<div class="catalog-item">
