@@ -4,52 +4,56 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<title>Nerds</title>
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
 	<header class="index-header">
-		<a href="index.html" class="logo-link"><img class="logo" src="img/nerds-logo.png" alt="image"></a>
+	<a href="index.html" class="logo-link"><img class="logo" src="img/nerds-logo.png" alt="image"></a>
 	<nav class="index-header__nav">
 		<ul class="index-header__list">
 			<li class="index-header__item"><a class="index-header__link" href="#">Студия</a></li>
 			<li class="index-header__item"><a class="index-header__link" href="#">Клиенты</a></li>
 			<li class="index-header__item"><a class="index-header__link" href="catalog.html">Магазин</a></li>
 			<li class="index-header__item"><a class="index-header__link" href="#">Контакты</a></li>
+			</div>
 			<li class="index-header__item index-header__item_cart"><a class="index-header__link" href="#">Корзина</a></li>
 		</ul>
 	</nav>
 	</header>
-	<div class="slider-container">
+	<main>
+	<h1 class="visability-hidden">Дизайн-студия из Краснодара</h1>
+	<section class="slider-section">
 	<ul>
 		<li>
 			<div class="slider-item">
-			<h2 class="slider-item__tagline">Долго, дорого, скрупулезно.</h2>
-			<p class="slider-item__text">Математически выверенный дизайн  для вашего сайта или мобильного приложения </p>
-			<a href="#" class="slider-item__link slider-item__link--first">Узнать больше</a>
-			<img src="img/slide1.png" alt="image" class="slider-item__img">
-	</div></li>
+			<div class="slider-item__info">
+				<h2 class="slider-item__info-tagline">Долго, дорого, скрупулезно.</h2>
+				<p class="slider-item__info-text">Математически выверенный дизайн  <br>	для вашего сайта или мобильного приложения.</p>
+				<a href="#" class="slider-item__link">Узнать больше</a>
+				</div><img src="img/slide1.png" alt="image" class="slider-item__img">
+			</div></li>
+		<!-- <li>
+			<div class="slider-item">
+			<div class="slider-item__info">
+				<h2 class="slider-item__info-tagline">Любим математику как никто другой</h2>
+			<p class="slider-item__info-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
+			<a href="#" class="slider-item__link">Узнать больше</a>
+			</div><img src="img/slide2.png" alt="image" class="slider-item__img">
+			</div></li>
 		<li>
 			<div class="slider-item">
-			<h2 class="slider-item__tagline">Любим математику как никто другой</h2>
-			<p class="slider-item__text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
-			<a href="#" class="slider-item__link slider-item__link--second">Узнать больше</a>
-			<img src="img/slide2.png" alt="image" class="slider-item__img">
-	</div></li>
-		<li>
-			<div class="slider-item">
-			<h2 class="slider-item__tagline">Только ночь, только хардкор</h2>
-			<p class="slider-item__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается. </p>
-			<a href="#" class="slider-item__link slider-item__link--third">Узнать больше</a>
-			<img src="img/slide3.png" alt="image" class="slider-item__img">
-	</div></li>
+			<h2 class="slider-item__info-tagline">Только ночь, только хардкор</h2>
+			<p class="slider-item__info-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается. </p>
+			<a href="#" class="slider-item__link">Узнать больше</a>
+			</div><img src="img/slide3.png" alt="image" class="slider-item__img">
+			</div></li> -->
 	</ul>
-	</div>
-	<main>
-		<h1>Дизайн-студия из Краснодара</h1><!-- visability -->
+	</section>
 	<section class="jobs">
-		<h2>Веб-сайты, приложения, презентации</h2><!-- visability -->
-		<ul>
+		<h2 class="visability-hidden">Веб-сайты, приложения, презентации</h2><!-- visability -->
+		<ul class="jobs-list">
 			<li class="jobs__item">
 					<img src="img/illustration-1.png" alt="image" class="jobs__img">
 					<h3 class="jobs__heading">Веб-сайты</h3>
@@ -81,7 +85,7 @@
 		</ul>
 		</div>
 		<div class="main-right">
-			<img src="img/ners-logo2.png" alt="image" class="main-right__logo">
+			<img src="img/nerds-logo2.png" alt="image" class="main-right__logo">
 			<span class="main-right__heading">С 2004 года любим точность во всем:</span>
 		<dl>
 				<dt><span class="main-right__numbers">146%</span></dt>
